@@ -3,12 +3,16 @@
 // текущий возраст сына (лет)
 // Подсчитайте, сколько лет назад отец был вдвое старше сына (или через сколько лет он будет вдвое старше).
 
-// function twiceOld(dedYears, sonYears) {
-//     if (dedYears / sonYears == 2) return `Батько уже старший за сина в 2 рази`;
-//     return `Через ${(dedYears - sonYears) * 2 - dedYears} роки(-ів) батько буде старшим за сина в 2 рази`;
+// function twiceOld(dadYears, sonYears) {
+//     if (dadYears < sonYears) return "Батько не може бути молодшим за сина";
+//     if (dadYears < 18) return "Батько зарано став батьком";
+//     if (dadYears / sonYears == 2) return `Батько уже старший за сина в 2 рази`;
+//     let result = (dadYears - sonYears) * 2 - dadYears;
+//     if (result > 0) return `Через ${result} роки(-ів) батько буде старшим за сина в 2 рази`;
+//     return `Батько був старший за сина в 2 рази ${Math.abs(result)} років тому`;
 // }
 
-// console.log(twiceOld(24, 12));
+// console.log(twiceOld(25, 13));
 
 
 
